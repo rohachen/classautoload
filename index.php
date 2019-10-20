@@ -14,8 +14,11 @@ include(BASEDIR.'\IMooc\Loader.php');
 spl_autoload_register('\\IMooc\\Loader::autoload');
 
 
-// IMooc\Object::test();
+$obj = new IMooc\Objectc();
 
-$db = new IMooc\Database();
-// 链式操作
-$db->where('id>0')->where('name=f');
+// $obj->title = "hello";
+// echo $obj->title;
+// $db = new IMooc\Database();
+// // 链式操作
+// $db->where('id>0')->where('name=f');
+

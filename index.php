@@ -14,4 +14,8 @@ include(BASEDIR.'\IMooc\Loader.php');
 spl_autoload_register('\\IMooc\\Loader::autoload');
 
 
-IMooc\Object::test();
+// IMooc\Object::test();
+
+$db = new IMooc\Database();
+// 链式操作
+$db->where('id>0')->where('name=f');
